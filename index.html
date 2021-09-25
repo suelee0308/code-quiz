@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-Quiz</title>
+    <!-- <link rel="stylesheet" src="./assets/css/reset.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="highscores"><a href="scoreHistory.html"> Highscores</a></div>
+        <div class="timer"> Time: <span id="time">0</span></div>
+    </header>
+
+    <div class="center">
+        <div class="wrapper">
+            <div id="startScreen" class="start">
+                <h1>Flags of the World Quiz</h1>
+                <p>
+                    In the given 30 seconds, try to identify as many country's flags as you can. For every incorrect answer, your time will be deducted 5 seconds!
+                </p>
+                <button class="startbutton">START</button>
+            </div>
+
+            <div id="questions" class="hide">
+                <img class=photo id=flag>
+                <h2 id="question-title"></h2>
+                <div id="choices" class="choices"></div>
+            </div>
+
+
+            <div id="end-screen" class="hide">
+                <h2>All done!</h2>
+                <p>Your final score is <span id="final-score"></span>.</p>
+                <p>
+                    Enter initials: <input type="text" id="initials" max="3" />
+                    <button id="submit">Submit</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/question.js"></script>
+    <script src="assets/js/index.js"></script>
+    
+</body>
+</html>
