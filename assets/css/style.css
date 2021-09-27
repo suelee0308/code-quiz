@@ -1,5 +1,8 @@
+.hide {
+    display: none;
+}
 body {
-    background-image:url("https://cdn.mos.cms.futurecdn.net/4fciRAREfw8LiU3BVJuhxB-1024-80.jpg.webp");
+    background-image:url("https://images3.alphacoders.com/704/thumb-1920-704591.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -22,6 +25,7 @@ header {
     font-size: 20px;
     display: inline-block;
     border-radius: 5px 15px;
+    border: 3px solid rgb(96, 133, 198);
 }
 
  .highscores a {
@@ -36,6 +40,7 @@ header {
     font-size: 20px;
     display: inline-block;
     border-radius: 5px 15px;
+    border: 3px solid rgb(96, 133, 198);
     color: white;
 }
 
@@ -51,24 +56,80 @@ header {
  .wrapper {
     padding: 15px;
     width: 70%;
-    background-color: white;
+    background-color: rgba(50, 50, 50, 0.8);
     border-radius: 20px;
-    border: 10px solid rgb(22, 64, 138);
+    border: 7px solid rgb(109, 141, 197);
+    position: absolute;
+    top: 25%;
+    text-align: center;
  }
 
- .startscreen {
-     opacity: 50%;
+h1, h2, p {
+     color: white;
  }
+
+h1, h2 {
+    font-size: 45px;
+    padding: 10px;
+}
+
+h2 {
+    font-weight:normal;
+}
+
+ p {
+     font-size: 30px;
+     padding-bottom: 10px;
+ }
+
+
 
  .startbutton {
-    background-color: #3d92b6;
-  border: none;
+    background: rgb(61,146,182);
+    background: linear-gradient(0deg, rgba(61,146,182,1) 30%, rgba(45,117,148,1) 58%, rgba(30,104,134,1) 79%);  border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  align-items: center;
   font-size: 16px;
-  margin: 5px;
+  margin: 15px;
   cursor: pointer;
  }
+
+ .choicesbuttons {
+     padding: 15px 25px;
+     font-size: large;
+     font-weight: bolder;
+     color: white;
+     background: rgb(61,146,182);
+     background: linear-gradient(0deg, rgba(61,146,182,1) 30%, rgba(45,117,148,1) 58%, rgba(30,104,134,1) 79%);     justify-content: space-evenly;
+ }
+
+ @media screen and (min-width: 768px) {
+     .wrapper{
+         width: 65%;
+     }
+ }
+
+ @media screen and (max-width: 920px) {
+    body {
+        background-image: url("https://www.wallpapersun.com/wp-content/uploads/2020/12/The-Office-Wallpaper-9.jpg");
+    }
+    h1, h2 {
+        font-size: 35px;
+        padding: 8px;
+    }
+    
+     p {
+         font-size: 20px;
+         padding-bottom: 8px;
+     }
+ }
+
+ @media screen and (min-width: 1200px) {
+    .wrapper{
+        width: 50%;
+    }
+}
