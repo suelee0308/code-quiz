@@ -70,7 +70,7 @@ h1, h2, p {
 
 h1, h2 {
     font-size: 45px;
-    padding: 10px;
+    padding: 20px;
 }
 
 h2 {
@@ -89,20 +89,27 @@ h2 {
     background: linear-gradient(0deg, rgba(61,146,182,1) 30%, rgba(45,117,148,1) 58%, rgba(30,104,134,1) 79%);  border: none;
   color: white;
   padding: 15px 30px;
+  border-radius: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   align-items: center;
   font-size: 16px;
+  font-weight: bold;
   margin: 15px;
   cursor: pointer;
  }
 
  .choicesbuttons {
-     padding: 15px 25px;
-     font-size: large;
-     font-weight: bolder;
+     font-family: 'Raleway', sans-serif;
+     padding: 12px 20px;
+     font-size: 25px;
+     font-weight: normal;
+     border-radius: 20px;
      color: white;
+     display: block;
+     margin: 0 auto;
+     align-items: center;
      background: rgb(61,146,182);
      background: linear-gradient(0deg, rgba(61,146,182,1) 30%, rgba(45,117,148,1) 58%, rgba(30,104,134,1) 79%);     justify-content: space-evenly;
  }
@@ -125,6 +132,10 @@ h2 {
      p {
          font-size: 20px;
          padding-bottom: 8px;
+     }
+     .choicesbuttons {
+        padding: 15px 25px;
+        font-size: 25px;
      }
  }
 

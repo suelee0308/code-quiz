@@ -69,7 +69,7 @@ function getQuestions(){
             choicesBtn.className = "choicesbuttons";
        });
     //    change back background color if questions was previously wrong
-       timerDiv.setAttribute("class", "timer");
+    //    timerDiv.setAttribute("class", "timer");
     }
     
     // function to compare the answer, store score if true, dock seconds if not, ++ to next question index
@@ -83,7 +83,7 @@ function getQuestions(){
         else {
             console.log("wrong")
             timeLeft = timeLeft -5;
-            timerDiv.style.backgroundColor = 'red';
+            // timerDiv.style.backgroundColor = 'red';
             }
         // move through index of questions
         questionIndex ++;
@@ -106,7 +106,7 @@ function getQuestions(){
         choices.setAttribute("class", "hide");
         endScreen.removeAttribute("class");
         //show final score in DOM 
-        finalScore.textContent = score;
+        finalScore.textContent = score + "%";
         // change final message
         if (score >= 60) {
             endMessage.textContent = "Well Done!"

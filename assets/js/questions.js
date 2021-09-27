@@ -5,11 +5,6 @@ let questions = [
         answer: "The Dementors"
     },
     {
-        title: "Where did Jim propose to Pam?",
-        choices: ["At a gas station", "Niagra Falls", "In the office", "At the bar"],
-        answer: "At a gas station"
-    },
-    {
         title: "What is the name of the movie produced by Michael?",
         choices: ["A Day in the Life At Dunder Mifflin", "Michael Bond", "Battle Star Galactica", "Threat Level Midnight"],
         answer: "Threat Level Midnight"
