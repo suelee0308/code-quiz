@@ -17,6 +17,9 @@ var endScreen = document.getElementById("endScreen");
 var score = 0;
 var finalScore = document.getElementById("final-score");
 var endMessage = document.getElementById("endMessage");
+var submit = document.getElementById("submit");
+var initials =  document.getElementById("initials");
+
 
 
 // Event listener to startbtn to begin function to start both the timer and start showing the questions
@@ -58,19 +61,26 @@ function getQuestions(){
         calledQuestions = questions[questionIndex];
     // document's question text is each questions.title key
         questionText.textContent = calledQuestions.title;
+
     // forEach() loop through the questions answer choices
         calledQuestions.choices.forEach(function(choice) {
+            // create new button element
             var choicesBtn = document.createElement("button");
+            // for each button put the value of the choice
             choicesBtn.setAttribute('value', choice);
-            choicesBtn.addEventListener("click", answerClick);
             choicesBtn.textContent = choice;
-    
             choices.appendChild(choicesBtn);
+            // add event listener, for click and run function to check for answer
+            choicesBtn.addEventListener("click", answerClick);
+            
             choicesBtn.className = "choicesbuttons";
        });
+
     //    change back background color if questions was previously wrong
     //    timerDiv.setAttribute("class", "timer");
     }
+
+
     
     // function to compare the answer, store score if true, dock seconds if not, ++ to next question index
     function answerClick(x) {
@@ -90,7 +100,10 @@ function getQuestions(){
     
         // once you reach the end of the quiz, call endQuiz function
         if (questionIndex === questions.length){
-        endQuiz();
+            timerEl.textContent = "0";
+            clearInterval(timerInterval);
+            endQuiz();
+
         } else {
             // continue to move through the questions, call back getQuestions function
             // get rid of previous answer choices
@@ -114,3 +127,24 @@ function getQuestions(){
             endMessage.textContent = "Good Try..."
         }
     }
+
+    // function to get input from user and store locally
+    submit.addEventListener ("click", saveScore)
+    function saveScore(event) {
+        event.preventDefault;
+        var userScore = {
+            userInitials: initials.value,
+            userScore: score,
+        }
+        event.preventDefault();
+        localStorage.setItem("key", JSON.stringify(userScore));
+    console.log(userScore);
+
+    }
+    
+    // take user's initials and score and display on high score
+
+
+
+    // var image = document.createElement("img")
+    // image.setAttribute("src", questions[questionIndex].img)

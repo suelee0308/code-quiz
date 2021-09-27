@@ -78,13 +78,13 @@ h2 {
 }
 
  p {
-     font-size: 30px;
-     padding-bottom: 10px;
+     font-size: 35px;
+     margin-bottom: 15px;
  }
 
 
 
- .startbutton {
+ .startbutton, #submit {
     background: rgb(61,146,182);
     background: linear-gradient(0deg, rgba(61,146,182,1) 30%, rgba(45,117,148,1) 58%, rgba(30,104,134,1) 79%);  border: none;
   color: white;
@@ -96,7 +96,7 @@ h2 {
   align-items: center;
   font-size: 16px;
   font-weight: bold;
-  margin: 15px;
+  margin: 20px 15px;
   cursor: pointer;
  }
 
@@ -108,8 +108,7 @@ h2 {
      border-radius: 20px;
      color: white;
      display: block;
-     margin: 0 auto;
-     align-items: center;
+     margin: 5px 5px 5px 8%;
      background: rgb(61,146,182);
      background: linear-gradient(0deg, rgba(61,146,182,1) 30%, rgba(45,117,148,1) 58%, rgba(30,104,134,1) 79%);     justify-content: space-evenly;
  }
@@ -125,7 +124,7 @@ h2 {
         background-image: url("https://www.wallpapersun.com/wp-content/uploads/2020/12/The-Office-Wallpaper-9.jpg");
     }
     h1, h2 {
-        font-size: 35px;
+        font-size: 32px;
         padding: 8px;
     }
     
@@ -134,7 +133,7 @@ h2 {
          padding-bottom: 8px;
      }
      .choicesbuttons {
-        padding: 15px 25px;
+        padding: 15px 20px;
         font-size: 25px;
      }
  }

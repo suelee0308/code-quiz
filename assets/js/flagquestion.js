@@ -1,6 +1,6 @@
 let questions = [
     {
-        img: URL("https://media.istockphoto.com/vectors/cuba-flag-background-vector-id916935436?k=20&m=916935436&s=612x612&w=0&h=SCel6uTpavwBJu7XyiEwAA59XCnPULva4Mr5NQWWf8U="),
+        img: "https://media.istockphoto.com/vectors/cuba-flag-background-vector-id916935436?k=20&m=916935436&s=612x612&w=0&h=SCel6uTpavwBJu7XyiEwAA59XCnPULva4Mr5NQWWf8U=",
         title: "Which country's flag is this?",
         choices: ["Cuba", "Puerto Rico", "Chile", "Bahamas"],
         answer: "Cuba"
@@ -73,5 +73,5 @@ let questions = [
     // endQuiz();
 // } else {
     
-}
+// }
 // }
