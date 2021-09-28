@@ -19,6 +19,7 @@ var finalScore = document.getElementById("final-score");
 var endMessage = document.getElementById("endMessage");
 var submit = document.getElementById("submit");
 var initials =  document.getElementById("initials");
+var cancel = document.getElementById("cancel");
 
 
 
@@ -121,7 +122,7 @@ function getQuestions(){
         //show final score in DOM 
         finalScore.textContent = score + "%";
         // change final message
-        if (score >= 60) {
+        if (score >= 70) {
             endMessage.textContent = "Well Done!"
         } else {
             endMessage.textContent = "Good Try..."
@@ -130,21 +131,32 @@ function getQuestions(){
 
     // function to get input from user and store locally
     submit.addEventListener ("click", saveScore)
+
+    // make enter key also submit the score
+submit.addEventListener("keydown", function(e){
+    if(e.keyCode === 13) {
+        event.preventDefault();
+        saveScore(e);
+    }
+});
+
     function saveScore(event) {
-        event.preventDefault;
+        event.preventDefault();
         var userScore = {
             userInitials: initials.value,
             userScore: score,
-        }
-        event.preventDefault();
+        };
         localStorage.setItem("key", JSON.stringify(userScore));
     console.log(userScore);
+    console.log(typeof userScore);
+
+        // change HTML location
+        window.location.href = "./scoreHistory.html";
 
     }
-    
-    // take user's initials and score and display on high score
 
-
-
-    // var image = document.createElement("img")
-    // image.setAttribute("src", questions[questionIndex].img)
+// function for cancel button
+    cancel.addEventListener ("click", backToBegin);
+    function backToBegin() {
+        window.location.reload();
+    }

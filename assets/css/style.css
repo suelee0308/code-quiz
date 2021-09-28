@@ -33,6 +33,14 @@ header {
      color: rgb(201, 201, 201);
  }
 
+ .highscores:hover {
+     background-color: white;
+ }
+
+ .highscores a:hover {
+    color: rgb(52, 49, 69);
+ }
+
  .timer {
     padding: 15px;
     margin: 10px;
@@ -83,8 +91,22 @@ h2 {
  }
 
 
+ button:hover {
+     background: white;
+     color: rgb(61,146,182);
+ }
 
- .startbutton, #submit {
+#submit:hover {
+    background: white;
+    color: rgb(61,146,182);
+}
+
+#cancel:hover {
+    background: white;
+    color: rgb(61,146,182);
+}
+
+ .startbutton, #submit, #cancel {
     background: rgb(61,146,182);
     background: linear-gradient(0deg, rgba(61,146,182,1) 30%, rgba(45,117,148,1) 58%, rgba(30,104,134,1) 79%);  border: none;
   color: white;
@@ -92,12 +114,11 @@ h2 {
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  align-items: center;
+  display: block;
   font-size: 16px;
   font-weight: bold;
-  margin: 20px 15px;
-  cursor: pointer;
+  margin: 8px auto;
+  /* cursor: pointer; */
  }
 
  .choicesbuttons {
