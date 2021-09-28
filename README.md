@@ -9,9 +9,12 @@ Assignment was to create a timed trivia quiz/game that includes multiple choice 
 
 ## Links
 - GitHub: https://github.com/suelee0308/code-quiz
-- Deployed website: 
+- Deployed website: https://suelee0308.github.io/code-quiz/
 
 ## Screenshots
 
-![screenshot](./assets/images/PNGFILENAMEHERE)
+![screenshot](./assets/images/screenshot3.png)
+![screenshot](./assets/images/screenshot2.png)
+![screenshot](./assets/images/screenshot4.png)
+![screenshot](./assets/images/screenshot1.png)
 
