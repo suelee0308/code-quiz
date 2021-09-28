@@ -12,4 +12,4 @@ console.log(userHighScoreInitials);
 var userHighScore = document.getElementById("individualScores");
 
 // function to display on high score
-userHighScore.textContent = "User: " + userHighScoreInitials + " --- " + " Score: " + userHighScoreScore;
+userHighScore.textContent = "User: " + userHighScoreInitials + " --- " + " Score: " + userHighScoreScore + "%";
